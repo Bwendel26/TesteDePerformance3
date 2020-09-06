@@ -34,7 +34,7 @@ O valor total da conta, com a taxa de serviço, será de R$ 110,00.
 
 Dividindo a conta por 2 pessoa(s), cada pessoa deverá pagar R$ 55,00.
 
-Questão 02
+<h3>Questão 02</h3>
 
  Desenvolva uma função que recebe a idade de uma pessoa e informe se essa pessoa é:
 
@@ -62,7 +62,7 @@ Não tem direito a voto.
 
  
 
-Questão 03
+<h3>Questão 03</h3>
 
 Em um concurso de fantasias, os jurados precisam digitar os nomes dos 5 participantes e suas respectivas notas, variando de 0 até 10. Crie uma função que leia os nomes dos participantes e, ao final, apresente apenas o nome e a nota do vencedor.
 
