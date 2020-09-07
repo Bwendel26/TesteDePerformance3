@@ -52,12 +52,6 @@ def contaConsumo(totalConta, numPessoas, percentualServico):
     else: 
         print("Valor(es) inválido(s)!")
 
-    # Informe o valor total do consumo: R$ 100.00
-    # Informe o total de pessoas: 2
-    # Informe o percentual do serviço, entre 0 e 100: 10
-    # O valor total da conta, com a taxa de serviço, será de R$ 110,00.
-    # Dividindo a conta por 2 pessoa(s), cada pessoa deverá pagar R$ 55,00.
-
 # main:
 valorConta = float(input("Informe o valor total do consumo: R$ "))
 qtdPessoas = int(input("Informe o total de pessoas: "))
