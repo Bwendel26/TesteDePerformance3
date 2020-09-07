@@ -26,14 +26,13 @@
 
 def verificaVencedor():
     
-    comprimento = 5
+    comprimento = 3
     nomes = []
     notas = []
     contador = 0
     notaMaior = 0
-    vencedor = []
     stringResultado = "O(a) vencedor(a) foi {} com nota {:.2f}!"
-    #stringEmpate = "Empate!!! Os vencedores foram: "
+    stringEmpate = "Empate!!! Os vencedores foram: "
     
     for i in range(comprimento):
         contador += 1
@@ -49,16 +48,17 @@ def verificaVencedor():
     for i in range(comprimento):
         if(notas[i] > notaMaior):
             notaMaior = notas[i]
-            vencedor = [nomes[i], notas[i]]
+            stringResultado = stringResultado.format(nomes[i], notas[i])
+            stringEmpate = stringResultado
 
-        #elif(notas[i] == notaMaior):
-            #vencedor += [nomes[i], notas[i]]
-            #stringEmpate += "\n{} com nota {:.2f}"
-            #stringResultado = stringEmpate
+        elif(notas[i] == notaMaior):
+            stringEmpate += "\n{} com nota {:.2f}".format(nomes[i], notas[i])
+            stringResultado = stringEmpate
         else:
             pass
 
-    print(stringResultado.format(vencedor[0], vencedor[1]))
+    print(stringResultado)
     return None
 
+# main
 verificaVencedor()
