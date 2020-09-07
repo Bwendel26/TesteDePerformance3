@@ -46,7 +46,7 @@ def contaConsumo(totalConta, numPessoas, percentualServico):
         contaIndividualString = str(contaIndividual)
         contaIndividualString.replace(".", ",")
 
-        print('O valor total da conta, com a taxa de serviço, será de R$ {}.\n'.format(contaMaisServicoString))
+        print('\nO valor total da conta, com a taxa de serviço, será de R$ {}.\n'.format(contaMaisServicoString))
         print('Dividindo a conta por {} pessoa(s), cada pessoa deverá pagar R$ {}.'.format(numPessoas , contaIndividualString))
 
     else: 
@@ -58,5 +58,9 @@ def contaConsumo(totalConta, numPessoas, percentualServico):
     # O valor total da conta, com a taxa de serviço, será de R$ 110,00.
     # Dividindo a conta por 2 pessoa(s), cada pessoa deverá pagar R$ 55,00.
 
-# teste:
-contaConsumo(360, 3, 20)
+# main:
+valorConta = float(input("Informe o valor total do consumo: R$ "))
+qtdPessoas = int(input("Informe o total de pessoas: "))
+taxaServico = float(input("Informe o percentual do serviço, entre 0 e 100: "))
+
+contaConsumo(valorConta, qtdPessoas, taxaServico)
