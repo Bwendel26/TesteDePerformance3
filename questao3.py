@@ -25,7 +25,7 @@
 # O(a) vencedor(a) foi Zeugma com nota 9.4!
 
 def verificaVencedor():
-    comprimento = 3
+    comprimento = 5
     nomes = []
     notas = []
     contador = 0
